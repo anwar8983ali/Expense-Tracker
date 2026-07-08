@@ -1,0 +1,146 @@
+
+/* A modern font for the component */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.expense-list-container {
+  width: 100%;
+  margin-top: 2.5rem; /* Space above the list */
+  font-family: 'Inter', sans-serif;
+}
+
+.expense-list-title {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  color: #1f2937; /* Dark gray */
+  margin-bottom: 1rem;
+}
+
+.expense-table-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb; /* Light gray border */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Ensures the border-radius is respected by the table */
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse; /* Removes space between cells */
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 1rem 1.5rem; /* 16px 24px */
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.expense-table th {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 600;
+  color: #6b7280; /* Medium gray */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #f9fafb; /* Very light gray background for header */
+}
+
+.expense-table td {
+  font-size: 0.9rem; /* 14px */
+  color: #374151; /* Slightly lighter than the title */
+}
+
+/* Removes the bottom border from the last row for a cleaner look */
+.expense-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.amount-header {
+  text-align: right;
+}
+
+.expense-amount {
+  font-weight: 600;
+  color: #111827; /* Near black for emphasis */
+  text-align: right;
+}
+
+.no-expenses-message {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+
+.actions-header {
+  text-align: right;
+}
+
+.actions-cell {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.action-btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.edit-btn {
+  background-color: #eef2ff;
+  color: #4338ca;
+}
+.edit-btn:hover {
+  background-color: #e0e7ff;
+}
+
+.delete-btn {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+.delete-btn:hover {
+  background-color: #fee2e2;
+}
+.delete-btn.confirming {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.save-btn {
+  background-color: #4338ca;
+  color: #ffffff;
+}
+.save-btn:hover {
+  background-color: #3730a3;
+}
+
+.cancel-btn {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+.cancel-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.edit-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  color: #111827;
+}
+.edit-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+.edit-input-amount {
+  text-align: right;
+}

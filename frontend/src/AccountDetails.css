@@ -1,0 +1,37 @@
+
+.account-details-container h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.account-details-container p {
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+  color: #6b7280;
+}
+
+.details-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detail-item label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.detail-item span {
+  font-size: 1rem;
+  color: #1f2937;
+  font-family: monospace; /* Good for displaying IDs */
+}
