@@ -61,6 +61,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // --- ROUTES ---
+app.get("/health", (req, res) => {
+  res.status(200).send("ok");
+});
 app.use('/api/auth', authRoutes);
 app.use('/api/expenses', expenseRoutes);
 app.use('/api/users', userRoutes);
