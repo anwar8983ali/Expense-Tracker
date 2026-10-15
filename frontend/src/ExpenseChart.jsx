@@ -65,7 +65,7 @@ export default function ExpenseCharts({ expenses }) {
               <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
               <XAxis dataKey="name" stroke="#6b7280" />
               <YAxis stroke="#6b7280" />
-              <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+              <Tooltip formatter={(value) => `₹${value.toFixed(2)}`} />
               <Bar dataKey="total" fill="#4f46e5" name="Total Spent" />
             </BarChart>
           </ResponsiveContainer>
@@ -81,7 +81,7 @@ export default function ExpenseCharts({ expenses }) {
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+              <Tooltip formatter={(value) => `₹${value.toFixed(2)}`} />
               <Legend />
             </PieChart>
           </ResponsiveContainer>
@@ -96,7 +96,7 @@ export default function ExpenseCharts({ expenses }) {
                     <PolarAngleAxis dataKey="name" />
                     <PolarRadiusAxis angle={30} domain={[0, 'auto']}/>
                     <Radar name="Expenses" dataKey="total" stroke="#10b981" fill="#10b981" fillOpacity={0.6} />
-                    <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+                    <Tooltip formatter={(value) => `₹${value.toFixed(2)}`} />
                 </RadarChart>
             </ResponsiveContainer>
         </div>
@@ -109,7 +109,7 @@ export default function ExpenseCharts({ expenses }) {
               <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
               <XAxis dataKey="date" stroke="#6b7280" />
               <YAxis stroke="#6b7280" />
-              <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+              <Tooltip formatter={(value) => `₹${value.toFixed(2)}`} />
               <Legend />
               <Bar dataKey="total" fill="#a78bfa" name="Daily Total" />
               <Line type="monotone" dataKey="movingAverage" stroke="#f97316" strokeWidth={2} name="3-Day Average" />
