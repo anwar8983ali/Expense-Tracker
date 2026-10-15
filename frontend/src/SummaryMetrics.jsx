@@ -15,8 +15,8 @@ export default function SummaryMetrics({ expenses }) {
   const thisMonthExpenses = totalExpenses; 
 
   const metricsData = [
-      { title: "Total Expenses", value: `$${totalExpenses.toFixed(2)}` },
-      { title: "This Month", value: `$${thisMonthExpenses.toFixed(2)}` },
+      { title: "Total Expenses", value: `₹${totalExpenses.toFixed(2)}` },
+      { title: "This Month", value: `₹${thisMonthExpenses.toFixed(2)}` },
       { title: "Total Transactions", value: totalTransactions },
       { title: "Your User ID", value: user?.id?.slice(-12) || 'N/A' } // Show last 12 chars of the real user ID
   ];
