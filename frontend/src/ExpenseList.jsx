@@ -111,7 +111,7 @@ export default function ExpenseList({ expenses, onUpdateExpense, onDeleteExpense
                         <td data-label="Category">{expense.category}</td>
                         <td data-label="Date">{new Date(expense.date).toLocaleDateString()}</td>
                         <td data-label="Amount" className="expense-amount">
-                          ${expense.amount.toFixed(2)}
+                          ₹{expense.amount.toFixed(2)}
                         </td>
                         <td data-label="Actions" className="actions-cell">
                           <button className="action-btn edit-btn" onClick={() => startEditing(expense)}>Edit</button>
